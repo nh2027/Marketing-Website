@@ -561,15 +561,6 @@ img { max-width: 100%; display: block; }
   font-weight: 700;
 }
 
-.cta-section { padding-top: 2.5rem; }
-.cta-box {
-  padding: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1.5rem;
-  background: linear-gradient(135deg, rgba(79,140,255,0.16), rgba(24,199,181,0.1));
-}
 
 .site-footer {
   padding: 2rem 0 3rem;

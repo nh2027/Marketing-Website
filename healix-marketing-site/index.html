@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HEALIX | Your health, visualised</title>
+  <meta name="description" content="HEALIX is a virtual health companion that brings biomarker tracking, AI support, provider visibility, appointments, and prescriptions into one modern digital experience." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-grid"></div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="HEALIX home">
+        <img src="assets/logo.png" alt="HEALIX logo" />
+        <div>
+          <span>HEALIX</span>
+          <small>Your health, visualised</small>
+        </div>
+      </a>
+
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+
+      <nav class="site-nav">
+        <a href="#features">Features</a>
+        <a href="#audiences">Who it's for</a>
+        <a href="#security">Trust</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#launch">Launch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Virtual health companion for daily living</span>
+          <h1>Bring patients, providers, and everyday health insights into one platform.</h1>
+          <p class="lead">
+            HEALIX transforms health tracking into a connected experience. Patients can monitor key biometrics, manage appointments and prescriptions, and get help from an AI assistant. Providers gain clearer visibility between visits, while administrators keep the platform organised and secure.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#launch">Launch HEALIX</a>
+            <a class="btn btn-secondary" href="#features">See what it does</a>
+          </div>
+          <div class="hero-points">
+            <span>Google Fit sync</span>
+            <span>AI-powered support</span>
+            <span>Provider dashboards</span>
+            <span>PDF exports</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal delay-1">
+          <div class="device-shell">
+            <div class="device-topbar">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="mockup">
+              <div class="mockup-sidebar">
+                <div class="mockup-brand">
+                  <img src="assets/logo.png" alt="" />
+                  <strong>HEALIX</strong>
+                </div>
+                <div class="mockup-nav">
+                  <span class="active">Dashboard</span>
+                  <span>Vitals</span>
+                  <span>Goals</span>
+                  <span>Appointments</span>
+                  <span>Prescriptions</span>
+                  <span>Assistant</span>
+                </div>
+              </div>
+              <div class="mockup-main">
+                <div class="mockup-summary card-like">
+                  <div>
+                    <small>Today</small>
+                    <h3>Your health at a glance</h3>
+                  </div>
+                  <span class="status-pill">Connected</span>
+                </div>
+                <div class="metric-grid">
+                  <article class="metric-card card-like">
+                    <small>Heart rate</small>
+                    <strong>72 BPM</strong>
+                    <span>within target range</span>
+                  </article>
+                  <article class="metric-card card-like">
+                    <small>SpO₂</small>
+                    <strong>98%</strong>
+                    <span>stable oxygen level</span>
+                  </article>
+                  <article class="metric-card card-like">
+                    <small>Steps</small>
+                    <strong>8,420</strong>
+                    <span>goal almost complete</span>
+                  </article>
+                  <article class="metric-card card-like">
+                    <small>Calories</small>
+                    <strong>1,930</strong>
+                    <span>daily activity synced</span>
+                  </article>
+                </div>
+                <div class="mockup-lower">
+                  <div class="chart-card card-like">
+                    <div class="chart-labels">
+                      <span>Weekly trend</span>
+                      <span>Live sync</span>
+                    </div>
+                    <div class="chart-bars" aria-hidden="true">
+                      <span style="height:38%"></span>
+                      <span style="height:55%"></span>
+                      <span style="height:49%"></span>
+                      <span style="height:66%"></span>
+                      <span style="height:74%"></span>
+                      <span style="height:61%"></span>
+                      <span style="height:85%"></span>
+                    </div>
+                  </div>
+                  <div class="assistant-card card-like">
+                    <small>AI Assistant</small>
+                    <p>Your resting heart rate looks consistent this week. Would you like a short activity suggestion before your next appointment?</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section trust-strip">
+      <div class="container trust-items reveal">
+        <span>Patient dashboard</span>
+        <span>Provider portal</span>
+        <span>Admin controls</span>
+        <span>Role-based access</span>
+        <span>MongoDB + FastAPI + React</span>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Core value</span>
+          <h2>Everything HEALIX needs to feel like a serious healthcare companion.</h2>
+          <p>
+            The platform is built around continuous monitoring, easier communication, and clearer action. It combines the best parts of wellness tracking and provider oversight in one flow.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <div class="icon">❤</div>
+            <h3>Biomarker tracking</h3>
+            <p>Track heart rate, blood oxygen, steps, and calories with clean dashboards, charts, and summaries.</p>
+          </article>
+          <article class="feature-card reveal delay-1">
+            <div class="icon">⚡</div>
+            <h3>Google Fit integration</h3>
+            <p>Bring wearable data into the experience so users can see their health signals in one place.</p>
+          </article>
+          <article class="feature-card reveal delay-2">
+            <div class="icon">🤖</div>
+            <h3>Context-aware AI assistant</h3>
+            <p>Give users a smarter support layer that can respond using their health data, appointments, and prescriptions.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="icon">📅</div>
+            <h3>Appointments that fit the workflow</h3>
+            <p>Let patients book and manage appointments while providers review and respond from their own dashboard.</p>
+          </article>
+          <article class="feature-card reveal delay-1">
+            <div class="icon">💊</div>
+            <h3>Prescription management</h3>
+            <p>Support prescription visibility, refill requests, and provider-side medication workflows in the same platform.</p>
+          </article>
+          <article class="feature-card reveal delay-2">
+            <div class="icon">📄</div>
+            <h3>Exportable insights</h3>
+            <p>Create a more useful clinical workflow with report exports, trend summaries, and information ready to review.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="audiences" class="section section-alt">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Built for every role</span>
+          <h2>One product. Three user journeys. One stronger care loop.</h2>
+        </div>
+
+        <div class="audience-grid">
+          <article class="audience-card reveal">
+            <h3>For patients</h3>
+            <p>Make day-to-day health easier to understand with visual progress, reminders, goals, alerts, and smart guidance.</p>
+            <ul>
+              <li>Simple dashboards and progress views</li>
+              <li>Goals, reminders, and notification flows</li>
+              <li>AI support for more confident daily decisions</li>
+            </ul>
+          </article>
+
+          <article class="audience-card reveal delay-1 accent">
+            <h3>For providers</h3>
+            <p>See patient patterns between appointments and act faster with clearer information, remote review, and built-in management tools.</p>
+            <ul>
+              <li>Trend visibility between visits</li>
+              <li>Appointment and prescription workflows</li>
+              <li>Patient lists and exportable data</li>
+            </ul>
+          </article>
+
+          <article class="audience-card reveal delay-2">
+            <h3>For administrators</h3>
+            <p>Keep the platform organised with account control, role management, and system-wide visibility.</p>
+            <ul>
+              <li>User and provider account oversight</li>
+              <li>Role-based platform administration</li>
+              <li>Audit-oriented system management</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container journey-grid">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Why it stands out</span>
+          <h2>HEALIX is not just another tracker.</h2>
+          <p>
+            It connects self-monitoring, provider visibility, and operational control. That makes it easier to position as a digital health product rather than a single-purpose wellness app.
+          </p>
+        </div>
+
+        <div class="journey-steps">
+          <article class="journey-step reveal">
+            <span>01</span>
+            <h3>Capture meaningful data</h3>
+            <p>Combine wearable sync and manual input to build a more complete picture of daily health.</p>
+          </article>
+          <article class="journey-step reveal delay-1">
+            <span>02</span>
+            <h3>Turn signals into insight</h3>
+            <p>Visual summaries, alerts, goals, and AI support help users understand what the data actually means.</p>
+          </article>
+          <article class="journey-step reveal delay-2">
+            <span>03</span>
+            <h3>Close the loop with care teams</h3>
+            <p>Providers review patient trends, manage appointments, and support continuity between consultations.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="security" class="section section-alt">
+      <div class="container security-grid">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Trust and scalability</span>
+          <h2>Designed to feel credible from day one.</h2>
+          <p>
+            HEALIX uses a modern full-stack setup and role-based architecture to present itself as a scalable digital health platform, not a rough prototype.
+          </p>
+        </div>
+
+        <div class="security-cards reveal delay-1">
+          <article class="security-card">
+            <h3>Privacy-minded architecture</h3>
+            <p>Role-based access, secure authentication, and protected API flows support a stronger trust story for patients and providers.</p>
+          </article>
+          <article class="security-card">
+            <h3>Built to expand</h3>
+            <p>The current architecture makes room for more sensors, broader integrations, richer reporting, and future product growth.</p>
+          </article>
+          <article class="security-card">
+            <h3>Modern stack</h3>
+            <p>FastAPI, React, MongoDB, Google Fit integration, and AI-powered assistance give the platform a strong technical identity.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Commercial framing</span>
+          <h2>Flexible pricing for adoption, pilots, and scale.</h2>
+          <p>
+            The positioning works best when patient access feels low-friction while provider and institutional plans reflect the value of remote monitoring and better oversight.
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="pricing-card reveal">
+            <small>Patient access</small>
+            <h3>Free entry</h3>
+            <p class="price">Accessible</p>
+            <ul>
+              <li>Health dashboards</li>
+              <li>Goals and reminders</li>
+              <li>Appointments and prescriptions</li>
+            </ul>
+          </article>
+          <article class="pricing-card featured reveal delay-1">
+            <div class="badge-top">Recommended</div>
+            <small>Clinic / provider</small>
+            <h3>Professional plan</h3>
+            <p class="price">License-based</p>
+            <ul>
+              <li>Provider dashboards</li>
+              <li>Trend review and exports</li>
+              <li>Patient management workflows</li>
+            </ul>
+          </article>
+          <article class="pricing-card reveal delay-2">
+            <small>Institutional rollout</small>
+            <h3>Organisation plan</h3>
+            <p class="price">Custom</p>
+            <ul>
+              <li>Cohort onboarding</li>
+              <li>Wider wellness initiatives</li>
+              <li>Future expansion potential</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="launch" class="section cta-section">
+      <div class="container cta-box reveal">
+        <div>
+          <span class="eyebrow">Launch-ready marketing page</span>
+          <h2>Promote HEALIX like a real product.</h2>
+          <p>
+            This page is built as a static website so it can be deployed quickly, shared in portfolios or presentations, and hosted for free on platforms like GitHub Pages.
+          </p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-primary" href="mailto:hello@healix.example">Request a demo</a>
+          <a class="btn btn-secondary" href="#top">Back to top</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div>
+        <strong>HEALIX</strong>
+        <p>A marketing landing page for the HEALIX virtual health companion.</p>
+      </div>
+      <p class="footer-note">Note: this promotional site presents a software engineering project concept and should not be used as medical advice.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
